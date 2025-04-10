@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iryna Chernobel — DevOps Student</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -100,23 +98,101 @@
       transform: translateY(-6px);
     }
 
-    form {
-      max-width: 440px;
+    .contact-section {
+      background-color: #718c6a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 20px;
       margin: 60px auto;
-      background: #ffffff;
-      padding: 32px;
-      border-radius: 16px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      max-width: 600px;
     }
 
-    form input {
-      width: 100%;
-      margin: 16px 0;
-      padding: 14px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+    .contact-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
       font-family: 'Inter', sans-serif;
     }
 
+    .contact-list li {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    .contact-list a {
+      color: #fff;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+
+    .contact-list a:hover {
+      color: #d4af37;
+    }
+
     footer {
-      t
+      text-align: center;
+      padding: 30px;
+      background-color: #dce2d4;
+      color: #50594f;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 30px; }
+      section h2 { font-size: 24px; }
+      .card { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="overlay">
+      <img src="https://i.postimg.cc/52rC9qYb/IMG-7625.jpg" alt="Iryna Chernobel" style="width: 160px; height: 160px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid #d4af37;">
+      <h1>Iryna Chernobel — DevOps Student</h1>
+      <p>Learning to build, automate, and deploy. This site is one of my first steps into tech.</p>
+      <a class="btn" href="https://www.instagram.com/ir04ek_/" target="_blank">Follow me on Instagram</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>SoftServe Academy Topics — Completed</h2>
+    <div class="topics">
+      <div class="card">DevOps as a profession</div>
+      <div class="card">Git & Version Control</div>
+      <div class="card">Linux OS</div>
+      <div class="card">Bash Scripting</div>
+      <div class="card">PowerShell</div>
+      <div class="card">RegExp</div>
+      <div class="card">Networking Basics</div>
+      <div class="card">TCP/IP Addressing</div>
+      <div class="card">Network Troubleshooting</div>
+      <div class="card">RDBMS & NoSQL</div>
+      <div class="card">Web Servers & Virtualization</div>
+      <div class="card">Infrastructure Tools</div>
+      <div class="card">CI/CD Jenkins & GitHub Actions</div>
+      <div class="card">Docker, IaaS & PaaS</div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Info</h2>
+    <ul class="contact-list">
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/ir04ek_/" target="_blank">@ir04ek_</a></li>
+      <li><strong>Email:</strong> <a href="mailto:ir04ek27@gmail.com">ir04ek27@gmail.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+380631024661">+380 631 024 661</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Iryna Chernobel. All rights reserved.
+  </footer>
+
+</body>
+</html>
